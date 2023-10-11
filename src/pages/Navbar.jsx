@@ -27,14 +27,14 @@ const sunDark = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill
 
 
 function Navbar() {
-  const [close, setClose] = useState(false)
+  const [close, setClose] = useState(true)
   const location = useLocation();
   const navigate = useNavigate();
   const {isDark, changeTheme} = useContext(AppContext)
 
 
   useEffect(() => {
-    setClose((prev) => !prev)
+    setClose(true)
   }, [location])
 
 
@@ -51,13 +51,13 @@ function Navbar() {
         </div>
 
         {/* mobile */}
-        <div className={close===true ? 'div-links-mob' : 'non-display'}>
+        <div className={close===false ? 'div-links-mob' : 'non-display'}>
             <Link className='links' to={'/'}>home</Link>
             <Link className='links' to={'/about'}>about</Link>
             <Link className='links' to={'/contact'}>contact</Link>
         </div>
         <div className='div-icon' onClick={() => setClose((prevBool) => (!prevBool))}>
-          {close===false ? menu_icon : close_icon}
+          {close===true ? menu_icon : close_icon}
         </div>
         <div className='div-links-lap'>
               <Link className='link_lap' to={'/'}>Home</Link>
