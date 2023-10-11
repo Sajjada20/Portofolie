@@ -31,6 +31,7 @@ function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const {isDark, changeTheme} = useContext(AppContext)
+  const [count, setcount] = useState(false)
 
 
   useEffect(() => {
