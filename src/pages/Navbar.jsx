@@ -51,13 +51,13 @@ function Navbar() {
         </div>
 
         {/* mobile */}
-        <div className={close ? 'div-links-mob' : 'non-display'}>
+        <div className={close===true ? 'div-links-mob' : 'non-display'}>
             <Link className='links' to={'/'}>home</Link>
             <Link className='links' to={'/about'}>about</Link>
             <Link className='links' to={'/contact'}>contact</Link>
         </div>
         <div className='div-icon' onClick={() => setClose((prevBool) => (!prevBool))}>
-          {!close ? menu_icon : close_icon}
+          {close===false ? menu_icon : close_icon}
         </div>
         <div className='div-links-lap'>
               <Link className='link_lap' to={'/'}>Home</Link>
