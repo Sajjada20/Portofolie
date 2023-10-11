@@ -1,0 +1,256 @@
+:root {
+    --clr-dark: #020617;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clr-slate800: #1e293b;
+    --clr-rose: #e11d48;
+    --clr-indigo: #4f46e5;
+    --clr-green: #16a34a;
+    --clr-yellow: #ca8a04;
+
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+    --size-11xl: 12rem;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.home-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-hero-div {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.foto {
+    width: 149px;
+    height: 149px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid var(--clr-rose);
+}
+#h1 {
+    font-family: 'General Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    color: var(--clr-slate400);
+    line-height: 2rem;
+}
+
+#h2 {
+    font-family: 'General Sans', sans-serif;
+    color: var(--clr-slate600);
+    font-size: var(--size-base);
+}
+
+.btn {
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-rose);
+    color: var(--clr-light);
+    border-style: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px var(--clr-rose);
+    transition: transform 0.4s, box-shadow 0.3s;
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    background-color: var(--clr-indigo);
+    box-shadow: 0px 0px 11px var(--clr-indigo);
+}
+
+
+
+/* project */
+
+
+.home-project-div {
+    width: 100%;
+    margin-top: var(--size-11xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#home-proj-h1 {
+    width: 80%;
+    font-size: var(--size-2xl);
+    text-transform: capitalize;
+}
+#home-proj-h2 {
+    width: 80%;
+    max-width: 50rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: var(--clr-slate600);
+    margin: 1rem 0px;
+}
+
+
+/* light mode */
+
+/* profielfoto */
+.foto-light {
+    width: 149px;
+    height: 149px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 4px solid var(--clr-indigo);
+}
+
+/* h1 title */
+#h1-light {
+    font-family: 'General Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    color: var(--clr-slate800);
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mode */
+
+
+/* xs */
+@media (min-width: 475px) {}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .home-hero-div {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .foto,
+    .foto-light {
+        width: 160px;
+        height: 160px;
+        transition: transform 0.6s;
+    }
+    .foto:hover,
+    .foto-light:hover {
+        transform: scale(1.125);
+    }
+    #h1 {
+        font-size: var(--size-6xl);
+        color: var(--clr-slate400);
+        line-height: 3rem;
+    }
+    #h1-light {
+        font-size: var(--size-6xl);
+        line-height: 3rem;
+        color: var(--clr-slate800);
+    }
+    #h2 {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .home-hero-div {
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+    .foto,
+    .foto-light {
+        width: 160px;
+        height: 160px;
+    }
+    #h1 {
+        font-size: var(--size-6xl);
+        color: var(--clr-slate400);
+        line-height: 3rem;
+    }
+    #h1-light {
+        font-size: var(--size-6xl);
+        line-height: 3rem;
+        color: var(--clr-slate800)
+    }
+    #h2 {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* xl */
+
+@media (min-width: 1280px) {
+    .home-hero-div {
+        margin-top: 2.2rem;
+
+        gap: 2.2rem;
+    }
+    .foto,
+    .foto-light {
+        width: 165px;
+        height: 165px;
+    }
+    #h1 {
+        font-size: var(--size-6xl);
+        color: var(--clr-slate400);
+        line-height: 3rem;
+    }
+    #h1-light {
+        font-size: var(--size-6xl);
+        color: var(--clr-slate800);
+        line-height: 3rem;
+    }
+    
+    #h2 {
+        font-size: var(--size-2xl);
+    }
+    
+
+}
