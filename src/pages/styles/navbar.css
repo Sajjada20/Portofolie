@@ -27,6 +27,18 @@
     top: 0%;
     z-index: 999;
 }
+.navbar-light-mode {
+    width: 100%;
+    height: 70px;
+    background-color: var(--clr-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+}
+
 
 .navbar-div {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -87,7 +99,13 @@
     font-size: 1.3rem;
     margin: 1.2rem 0;
 }
-
+.links-light-mode {
+    text-decoration: none;
+    color: var(--clr-green);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin: 1.2rem 0;
+}
 .div-links-mob {
     background-color: rgba(62, 62, 62, 0.2);
     backdrop-filter: blur(50px);
@@ -195,6 +213,12 @@
     .links {
         text-decoration: none;
         color: var(--clr-rose);
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        margin: 1.5rem 0;
+    }
+    .links-light-mode {
+        text-decoration: none;
         text-transform: capitalize;
         font-size: 1.6rem;
         margin: 1.5rem 0;

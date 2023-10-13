@@ -31,7 +31,6 @@ function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const {isDark, changeTheme} = useContext(AppContext)
-  const [count, setcount] = useState(false)
 
 
   useEffect(() => {
@@ -40,7 +39,7 @@ function Navbar() {
 
 
   return (
-    <div className='navbar'>
+    <div className={isDark ? 'navbar' : 'navbar-light-mode'}>
       <div className='navbar-div'>
         <div className='navbar-idk'>
           <div className='naam-div' onClick={() => navigate('/')}>
@@ -53,9 +52,9 @@ function Navbar() {
 
         {/* mobile */}
         <div className={close===false ? 'div-links-mob' : 'non-display'}>
-            <Link className='links' to={'/'}>home</Link>
-            <Link className='links' to={'/about'}>about</Link>
-            <Link className='links' to={'/contact'}>contact</Link>
+            <Link className={isDark ? 'links' : 'links-light-mode'} to={'/'}>home</Link>
+            <Link className={isDark ? 'links' : 'links-light-mode'} to={'/about'}>about</Link>
+            <Link className={isDark ? 'links' : 'links-light-mode'} to={'/contact'}>contact</Link>
         </div>
         <div className='div-icon' onClick={() => setClose((prevBool) => (!prevBool))}>
           {close===true ? menu_icon : close_icon}
