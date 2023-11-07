@@ -5,15 +5,17 @@ import Projects from '../comp/Projects'
 import Projectwo from '../comp/Projectwo'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../App'
+import { HomeProjects } from '../data'
+/* project One Info */
+const projectOne= HomeProjects[0]
+const parag1 = <p>The Next <strong>Generation</strong> <a>Payment Method</a>.</p>
+const parag2 = <p>With the right <strong>credit card</strong>, you can improve your financial life by building <a>credit</a>, <a>earning rewards</a> and <a>saving money</a>.</p>
 
 
-
-
-const parag1 = <p>Labore magna ut non <strong>labore Lorem nisi culpa</strong> sint et quis sint. Enim pariatur deserunt do ad exercitation.</p>
-const parag2 = <p>Ea ut non cupidatat consequat sint elit ipsum culpa dolor <a>cillum commodo</a>. Do esse excepteur cillum deserunt duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing cupidatat sint.</p>
-
-const parag3 = <p>Labore magna ut non labore Lorem nisi culpa sint et quis sint. <strong>Enim pariatur deserunt</strong> do ad exercitation.</p>
-const parag4 = <p>Ea ut non <a>cupidatat consequat</a> sint elit ipsum culpa dolor cillum commodo. Do esse excepteur cillum deserunt duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing cupidatat sint.</p>
+/* project Two Info */
+const projectTwo = HomeProjects[1]
+const parag3 = <p>Your <strong>Imaginative</strong> Fruit Oasis!</p>
+const parag4 = <p>At Verdant, we offer a <a>delightful virtual experience</a> filled with imaginative fruits and endless fun. Explore our <a>colorful fruit aisles</a>, shop for <as>fantastical produce</as>, and set your <a>creativity free!</a></p>
 
 
 function Home() {
@@ -30,19 +32,15 @@ function Home() {
         <img src={foto} alt="profile-foto" className={isDark ? 'foto' : 'foto-light'} />
         <h2 id='h2'><a>Hi</a>, I'm <strong>Sajjad</strong> 👋</h2>
         <h1 id={isDark ? 'h1' : 'h1-light'}>FRONT-END<br/>WEB DEVELOPER.</h1>
-        <button onClick={clicked} className='btn'>Reach out</button>
+        <button onClick={clicked} className='btn'>Contact opnemen</button>
       </div>
       <div className='home-project-div'>
-          <h1 id='home-proj-h1'>projects</h1>
-          <h2 id='home-proj-h2'>Mollit pariatur tempor nisi dolor non consequat magna cupidatat reprehenderit. Aliquip excepteur ullamco aliquip magna est et commodo deserunt ipsum.</h2>
+          <h1 id='home-proj-h1'>Mijn eerdere projecten</h1>
+          {/* <h2 id='home-proj-h2'>Mollit pariatur tempor nisi dolor non consequat magna cupidatat reprehenderit. Aliquip excepteur ullamco aliquip magna est et commodo deserunt ipsum.</h2> */}
       </div>
       <div>
-          <Projects title={'Wax Motif'} image={lorem} parag1={parag1} parag2={parag2} button={'website'} />
-          <Projectwo title={'Draze Force'} image={lorem2} parag1={parag3} parag2={parag4} button={'website'}/>
-          <Projects title={'Artren'} image={lorem3} parag1={parag1} parag2={parag4} button={'website'} />
-          <Projectwo title={'Platform Pro'} image={lorem4} parag1={parag3} parag2={parag2} button={'website'}/>
-          <Projects title={'Wallys Vegan'} image={lorem5} parag1={parag3} parag2={parag4} button={'website'} />
-          <Projectwo title={'Old Portfolio'} image={lorem} parag1={parag1} parag2={parag2} button={'website'}/>
+          <Projects parag1={parag1} parag2={parag2} data={projectOne} />
+          <Projectwo parag1={parag3} parag2={parag4} data={projectTwo} />
       </div>
     </div>
   )

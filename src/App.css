@@ -45,7 +45,6 @@
   font-family: 'General Sans', sans-serif;
   color: var(--clr-light);
   background-color: var(--clr-dark);
-  padding-bottom: 15rem;
   height: 100%;
 }
 .light-app {
@@ -53,6 +52,5 @@
   font-family: 'General Sans', sans-serif;
   color: var(--clr-slate800);
   background-color: var(--clr-light);
-  padding-bottom: 10rem;
   height: 100%;
 }

@@ -68,9 +68,10 @@
 #proj-imgt {
     width: 90%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     border-radius: 7px;
+    border: 1px solid var(--clr-rose);
 }
 
 #proj-p1t,
@@ -79,6 +80,9 @@
 #proj-p2-lightt {
     font-size: 0.8rem;
     line-height: 1.3rem;
+}
+#span-project {
+    margin: 0 1rem;
 }
 
 #proj-p1t {

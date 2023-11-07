@@ -46,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    max-width: 2000px;
 }
 .naam-div h1 {
     font-family: 'Montserrat', sans-serif;
@@ -72,8 +72,15 @@
 }
 
 .div-icon {
-    z-index: 999;
+    position: relative;
+    z-index: 2;
+    transition: all .6s;
 }
+
+.div-icon:active {
+    transform: rotateZ(360deg);
+}
+
 .div-sun-icon {
     cursor: pointer;
 }
@@ -96,20 +103,20 @@
     text-decoration: none;
     color: var(--clr-rose);
     text-transform: capitalize;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 1.2rem 0;
 }
 .links-light-mode {
     text-decoration: none;
     color: var(--clr-green);
     text-transform: capitalize;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 1.2rem 0;
 }
 .div-links-mob {
     background-color: rgba(62, 62, 62, 0.2);
     backdrop-filter: blur(50px);
-    width: 50%;
+    width: 100%;
     height: 100vh;
     position: absolute;
     top: 0px;
@@ -214,13 +221,13 @@
         text-decoration: none;
         color: var(--clr-rose);
         text-transform: capitalize;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin: 1.5rem 0;
     }
     .links-light-mode {
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin: 1.5rem 0;
     }
     

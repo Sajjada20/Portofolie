@@ -4,20 +4,34 @@ import './projects.css'
 import { AppContext } from '../App'
 
 
-
+const gitUrl = 'https://vercel.com/sajjada20s-projects/verdant?deploymentDeleted=1'
+const webUrl = 'https://bank-gen-sajjada20s-projects.vercel.app/'
 
 function Projects(props) {
   const {isDark} = useContext(AppContext)
-    const {title, image, parag1, parag2, button} = props
+  const {title, image, button} = props.data
+  const par1 = props.parag1
+  const par2 = props.parag2
+
+  const AnotherPage = (url) => {
+    window.open(url, '_blank');
+}
+
+
   return (
     <div className='project'>
         <div className='projects'>
             <img loading='lazy' id='proj-img' src={image} alt="imageUrl" />
             <div className='proj-div-2'>
                 <h1 id='proj-h1'>{title}</h1>
-                <p id={isDark ? 'proj-p1' : 'proj-p1-light'}>{parag1}</p>
-                <p id={isDark ? 'proj-p2' : 'proj-p2-light'}>{parag2}</p>
-                <button onClick={null} className='btn'>{button}</button>
+                <p id={isDark ? 'proj-p1' : 'proj-p1-light'}>{par1}</p>
+                <p id={isDark ? 'proj-p2' : 'proj-p2-light'}>{par2}</p>
+                <div>
+                <button onClick={() => AnotherPage(webUrl)} className='btnt'>{button}</button>
+                <span id='span-project'></span>
+                <button className='btn' onClick={() => AnotherPage(gitUrl)}>Github</button>
+                </div>
+
             </div>
         </div>
     </div>
