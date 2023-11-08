@@ -1,13 +1,6 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import { cardInfo } from '../data';
-import { Col, Container, Row } from 'react-bootstrap';
-
-
-
-
-
+import './cardcomp.css'
 
 
 /* geen boostrap gebruiken */
@@ -15,34 +8,24 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 
 
-
-
-
-
-function CardComp() {
+function CardComp({isDark}) {
   return (
-    <Container className='justify-content-center align-items-center w-70 '>
-
-    <Row className='row g-3'>
-    {cardInfo.map((item, idx) => {
-        const {title, text, footerText, image} = item;
-        return (
-            <Col className='col col-4'>
-            <Card>
-                    <Card.Img variant="top" src={image} />
-                    <Card.Body>
-                        <Card.Title>{title}</Card.Title>
-                        <Card.Text>{text}</Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">{footerText}</small>
-                    </Card.Footer>
-            </Card>
-            </Col>
+    <div className='card-div-main'>
+    <div className='cardcom-div'>
+    {cardInfo.map((item) => {
+      const {title, image, url} = item;
+      return (
+        <div className={isDark ? 'card-item' : 'card-item-light-mode' }>
+          <a href={url} target='_blank'>
+            <img src={image} alt="" />
+            <h3 style={{color: isDark ? 'white' : 'black'}}>{title}</h3>
+        </a>
+          </div>
         )
-    })}
-    </Row>
-    </Container>
+      })}
+      </div>
+    </div>
+
   )
 }
 

@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import './styles/about.css'
 import { AppContext } from '../App'
-import Footer from '../comp/Footer'
 import CardComp from '../comp/CardComp'
 
 function About() {
   const {isDark} = useContext(AppContext)
+
 
   return (
     <div className='div-about-hoofd'>
@@ -37,7 +37,7 @@ function About() {
             </div>
           </div>
       </div>
-      <CardComp/>
+      <CardComp isDark={isDark}/>
     </div>
   )
 }

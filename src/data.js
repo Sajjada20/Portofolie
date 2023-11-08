@@ -1,8 +1,8 @@
 
-import {likeFillRed,like,like2,likeFill,airbnb,sajjad,bill,binance,card,coinbase,dropbox,logo,quotes,robot,send,shield,star,menu,close,google,apple,arrowUp,discount,facebook,instagram,linkedin,twitter,people01,people02,people03,logo1} from './assets/new/index'
+import {} from './assets/new/index'
 
 import {bank, market, vercal} from './assets/website/inde'
-
+import {boostrap1, css, git, JavaScript, react, html, wordpress} from './assets/index'
 
 export const HomeProjects = [
     {
@@ -95,48 +95,61 @@ export const footerLinks = [
 export const Website_Name = 'Sajjad' /* name (string) */
 
 
-
 export const cardInfo = [
-  {
-    title: 'React',
-    text: 'A JavaScript library for building user interfaces.',
-    footerText: 'React skills',
-    image: 'react-image.jpg',
-  },
-  {
-    title: 'JavaScript',
-    text: 'A versatile programming language for web development.',
-    footerText: 'JavaScript skills',
-    image: 'javascript-image.jpg',
-  },
   {
     title: 'HTML',
     text: 'The standard markup language for web pages.',
     footerText: 'HTML skills',
-    image: 'html-image.jpg',
+    image: html,
+    url: 'https://www.w3schools.com/html/'
   },
   {
     title: 'CSS',
     text: 'Cascading Style Sheets for web page styling.',
     footerText: 'CSS skills',
-    image: 'css-image.jpg',
+    image: css,
+    url: 'https://www.w3schools.com/css/'
+
+  },
+  {
+    title: 'JavaScript',
+    text: 'A versatile programming language for web development.',
+    footerText: 'JavaScript skills',
+    image: JavaScript,
+    url: 'https://www.w3schools.com/css/'
+
+  },
+  {
+    title: 'React',
+    text: 'A JavaScript library for building user interfaces.',
+    footerText: 'React skills',
+    image: react,
+    url: 'https://www.w3schools.com/REACT/DEFAULT.ASP'
+
   },
   {
     title: 'Git',
     text: 'Version control system for collaborative coding.',
     footerText: 'Git skills',
-    image: 'git-image.jpg',
+    image: git,
+    url: 'https://www.w3schools.com/git/'
+
   },
   {
     title: 'Bootstrap',
     text: 'A front-end framework for responsive design.',
     footerText: 'Bootstrap skills',
-    image: 'bootstrap-image.jpg',
+    image: boostrap1,
+    url: 'https://www.w3schools.com/bootstrap/'
+
   },
   {
     title: 'WordPress',
     text: 'A popular content management system for websites.',
     footerText: 'WordPress skills',
-    image: 'wordpress-image.jpg',
+    image: wordpress,
+    url: 'https://www.w3schools.com/aws/aws_guided_project_deploy_wordpress_site_using_ec2.php'
+
   },
+  // Add the rest of the items here
 ];

@@ -70,8 +70,9 @@
     height: 100%;
     object-fit: contain;
     object-position: center;
-    border-radius: 7px;
-    border: 1px solid var(--clr-rose);
+    border-radius: 20px;
+    border-right: 1px solid var(--clr-rose);
+    border-left: 1px solid var(--clr-rose);
 }
 
 #proj-p1t,
