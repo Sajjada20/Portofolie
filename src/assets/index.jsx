@@ -12,6 +12,16 @@ import ytIcon from './yt.png'
 import igIcon from './ig.png'
 import whatsIcon from './whats.png'
 
+import boostrap1 from './lang/bootsrap.png'
+import css from './lang/css1.png'
+import git from './lang/git.png'
+import JavaScript from './lang/javascript.png'
+import react from './lang/react.png'
+import html from './lang/html1.jpg'
+import wordpress from './lang/wordpress.webp'
+
+
+export {boostrap1, css, git, JavaScript, react, html, wordpress}
 
 
 
