@@ -3,7 +3,6 @@ import { cardInfo } from '../data';
 import './cardcomp.css'
 
 
-/* geen boostrap gebruiken */
 
 
 
@@ -19,9 +18,8 @@ function CardComp({isDark}) {
           <a href={url} target='_blank'>
             <img src={image} alt="" />
             <h3 style={{color: isDark ? 'white' : 'black'}}>{title}</h3>
-        </a>
-          </div>
-        )
+          </a>
+        </div>)
       })}
       </div>
     </div>
