@@ -36,6 +36,7 @@ function Home() {
       </div>
       <div className='home-project-div'>
           <h1 id='home-proj-h1'>Mijn eerdere projecten</h1>
+          <br/>
           {/* <h2 id='home-proj-h2'>Mollit pariatur tempor nisi dolor non consequat magna cupidatat reprehenderit. Aliquip excepteur ullamco aliquip magna est et commodo deserunt ipsum.</h2> */}
       </div>
       <div>

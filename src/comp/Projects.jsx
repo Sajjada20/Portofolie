@@ -4,7 +4,7 @@ import './projects.css'
 import { AppContext } from '../App'
 
 
-const gitUrl = 'https://vercel.com/sajjada20s-projects/verdant?deploymentDeleted=1'
+const gitUrl = 'https://github.com/Sajjada20/BankGen'
 const webUrl = 'https://bank-gen-sajjada20s-projects.vercel.app/'
 
 function Projects(props) {

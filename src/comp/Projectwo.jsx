@@ -3,8 +3,8 @@ import {lorem, lorem2, lorem3, lorem4, lorem5, foto} from '../assets/index'
 import './projectwo.css'
 import { AppContext } from '../App'
 
-const gitUrl = ''
-const webUrl = ''
+const gitUrl = 'https://github.com/Sajjada20/Verdant'
+const webUrl = 'https://verdant-liard.vercel.app/'
 
 
 function Projects(props) {
